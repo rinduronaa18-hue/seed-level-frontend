@@ -12,22 +12,28 @@
   <header class="site-header">
     <div class="container header-inner">
       <h1>Result</h1>
-      <nav aria-label="Menti result navigation">
-        <a href="dashboard.html">Back</a>
-      </nav>
+      <div class="navigation">
+        <a class="btn-nav" href="dashboard.html">Dashboard</a>
+        <a class="btn-nav" href="take-test.html">Take Test</a>
+        <a class="btn-nav btn-nav-active" href="result.html">Result</a>
+        <a class="btn-nav" href="../index.html">Logout</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
       <h2>Hasil Tes</h2>
-      <p>Nama Tes: HTML Basic Test</p>
-      <p>Nilai: 80/100</p>
-      <section class="card inner-card">
+      <div class="mt-1">
+        <p>Nama Tes: HTML Basic Test</p>
+        <p class="mt-1">Nilai: <span class="stat-value success" style="color: #0e8345; font-weight: bold;">80/100</span></p>
+      </div>
+
+      <div class="card inner-card mt-2">
         <h3>Detail Jawaban</h3>
-        <p>Soal 1: Benar</p>
-        <p>Soal 2: Salah</p>
-      </section>
+        <p class="mt-1">Soal 1: <span style="color: #0e8345; font-weight: bold;">✔ Benar</span></p>
+        <p class="mt-1">Soal 2: <span style="color: #e63946; font-weight: bold;">✘ Salah</span></p>
+      </div>
     </section>
   </main>
 

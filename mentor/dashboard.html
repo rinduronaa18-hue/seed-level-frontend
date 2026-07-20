@@ -12,17 +12,44 @@
   <header class="site-header">
     <div class="container header-inner">
       <h1>Dashboard Mentor</h1>
-      
+      <div class="navigation">
+        <a class="btn-nav btn-nav-active" href="dashboard.html">Dashboard</a>
+        <a class="btn-nav" href="tests/index.html">Tests</a>
+        <a class="btn-nav" href="../index.html">Logout</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
-      <h2>Ringkasan Mentor</h2>
-      <p>Halaman awal untuk mengelola test dan question milik mentor.</p>
+      <h2 class="mb-1">Ringkasan Mentor</h2>
+      <p class="mb-2">Halaman awal untuk mengelola test dan question milik mentor.</p>
     </section>
-  </main>
 
+    <div class="card-grid mt-2">
+      <div class="card">
+        <h2>Total Tests</h2>
+        <p class="mt-1 stat-value success">3</p>
+        <p class="mt-1">Tes ujian yang dibuat.</p>
+      </div>
+
+      <div class="card">
+        <h2>Total Questions</h2>
+        <p class="mt-1 stat-value danger">2</p>
+        <p class="mt-1">Soal ujian tersedia.</p>
+      </div>
+    </div>
+
+    <div class="card mt-2">
+      <h2>Aksi Cepat</h2>
+      <p class="mb-1">Gunakan pintasan di bawah ini untuk mengelola data secara langsung.</p>
+      <div class="button-group">
+        <a class="btn btn-primary" href="tests/index.html">Kelola Tests</a>
+        <a class="btn btn-primary" href="tests/questions/index.html">Kelola Questions</a>
+      </div>
+    </div>
+  </main> 
+  
   <footer class="site-footer">
     <div class="container">
       <p>Bootcamp Seed Level - Frontend</p>

@@ -12,7 +12,12 @@
   <header class="site-header">
     <div class="container header-inner">
       <h1>Dashboard Menti</h1>
-     
+      <div class="navigation">
+        <a class="btn-nav btn-nav-active" href="dashboard.html">Dashboard</a>
+        <a class="btn-nav" href="take-test.html">Take Test</a>
+        <a class="btn-nav" href="result.html">Result</a>
+        <a class="btn-nav" href="../index.html">Logout</a>
+      </div>
     </div>
   </header>
 
@@ -21,6 +26,35 @@
       <h2>Ringkasan Menti</h2>
       <p>Halaman awal untuk mengerjakan tes dan melihat hasil.</p>
     </section>
+
+    <div class="card mt-2">
+      <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+        <h2>Daftar Tests Tersedia</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Judul</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Judul">HTML Basic Test</td>
+              <td data-label="Status">Published</td>
+              <td data-label="Aksi">
+                <div class="table-actions">
+                  <a class="btn" href="take-test.html" style="background-color: #0e8345; color: white;">Mulai Ujian</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
